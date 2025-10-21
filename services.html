@@ -1,0 +1,172 @@
+<!-- services.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | Pretol Global Exports Ltd</title>
+  <style>
+    :root {
+      --green: #154734;
+      --gold: #154;
+      --white: #ffffff;
+      --light: #f9f9f9;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: var(--light);
+      color: #333;
+      line-height: 1.7;
+    }
+
+    header {
+      background: var(--green);
+      color: var(--white);
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header img {
+      height: 45px;
+      width: auto;
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--gold);
+    }
+
+    .hero {
+      background: linear-gradient(rgba(21,71,52,0.8), rgba(21,71,52,0.8)), url('images/services-bg.jpg') center/cover no-repeat;
+      color: var(--white);
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .services {
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .service-card {
+      background: var(--white);
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      padding: 30px;
+      border-top: 5px solid var(--gold);
+      transition: transform 0.3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .service-card h2 {
+      color: var(--green);
+      margin-bottom: 10px;
+    }
+
+    .service-card p {
+      font-size: 0.95rem;
+      text-align: justify;
+    }
+
+    footer {
+      background: var(--green);
+      color: var(--white);
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9rem;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="Pretol Global Exports Logo">
+   <nav>
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Our Core Services</h1>
+    <p>Connecting Africa’s finest exports to the global market.</p>
+  </section>
+
+  <section class="services">
+    <div class="service-card">
+      <h2>Export of Agricultural Products</h2>
+      <p>We specialize in exporting high-demand agricultural goods such as gari, dried ginger, hibiscus flower, chili pepper, banana flour, garlic, turmeric, and more. Each product meets international standards to guarantee customer satisfaction.</p>
+    </div>
+
+    <div class="service-card">
+      <h2>Procurement & Sourcing</h2>
+      <p>Our team identifies and aggregates premium-quality farm and finished products from trusted local suppliers across Nigeria, ensuring consistent quality and fair pricing.</p>
+    </div>
+
+    <div class="service-card">
+      <h2>Product Processing & Packaging</h2>
+      <p>We process and package goods to meet the exact specifications of destination markets, ensuring products are ready for export without delay or rejection.</p>
+    </div>
+
+    <div class="service-card">
+      <h2>Market & Product Sourcing on Demand</h2>
+      <p>We help clients connect with reliable suppliers or locate specific goods based on market trends and custom requirements. Our sourcing network spans multiple regions and industries.</p>
+    </div>
+
+    <div class="service-card">
+      <h2>Global Logistics & Shipping</h2>
+      <p>We offer reliable freight and shipping solutions to ensure smooth transport from Nigeria to destination ports worldwide, managing customs, documentation, and delivery tracking.</p>
+    </div>
+
+    <div class="service-card">
+      <h2>Trade Representation & Brokerage</h2>
+      <p>We connect international buyers with verified Nigerian producers, creating a secure bridge for trusted business partnerships and sustainable trade opportunities.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Pretol Global Exports Ltd. All rights reserved.
+  </footer>
+
+</body>
+</html>

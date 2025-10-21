@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pretol Global Exports Ltd</title>
+
+  <!-- Open Graph / Social Media Preview -->
+  <meta property="og:title" content="Pretol Global Exports Ltd">
+  <meta property="og:description" content="Export • Trade • Logistics">
+  <meta property="og:image" content="logo.jpg"> <!-- replace with your preview image -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://flexi-spec.github.io/pretol/">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Pretol Global Exports Ltd">
+  <meta name="twitter:description" content="Export • Trade • Logistics">
+  <meta name="twitter:image" content="preview.jpg"> <!-- same preview image -->
+
+  <!-- Styles -->
+  <style>
+    :root {
+      --green: #154734;
+      --gold: #bfa046;
+      --white: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: var(--green);
+      overflow: hidden;
+    }
+
+    .logo-container {
+      text-align: center;
+      animation: fadeIn 2s ease-out;
+    }
+
+    .logo-container img {
+      width: 160px;
+      height: auto;
+      margin-bottom: 15px;
+      animation: spinGlobe 6s linear infinite;
+    }
+
+    h1 {
+      color: var(--white);
+      font-size: 1.6rem;
+      letter-spacing: 1px;
+    }
+
+    h1 span {
+      color: var(--gold);
+    }
+
+    p {
+      color: var(--white);
+      opacity: 0.85;
+      font-size: 1rem;
+      margin-top: 5px;
+      margin-bottom: 20px;
+    }
+
+    .loader {
+      border: 2px solid rgba(255,255,255,0.3);
+      border-top: 2px solid var(--gold);
+      border-radius: 50%;
+      width: 45px;
+      height: 45px;
+      animation: rotate 1.6s linear infinite;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes fadeOut {
+      to { opacity: 0; visibility: hidden; }
+    }
+
+    @keyframes rotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    @keyframes spinGlobe {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+
+  <!-- Script for splash transition -->
+  <script>
+    setTimeout(() => {
+      document.body.style.animation = "fadeOut 1.5s ease forwards";
+      setTimeout(() => window.location.href = "home.html", 1500);
+    }, 4500);
+  </script>
+</head>
+
+<body>
+  <div class="logo-container">
+    <img src="logo.png" alt="Pretol Global Exports Ltd Logo">
+    <h1><span>Pretol</span> Global Exports Ltd</h1>
+    <p>Export • Trade • Logistics</p>
+    <div class="loader"></div>
+  </div>
+</body>
+</html>
